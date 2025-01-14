@@ -1,5 +1,4 @@
 import { useState, useCallback, useEffect, useRef } from "react";
-import toast from 'react-hot-toast';
 
 function App() {
   const [length, setLength] = useState(8);
@@ -41,7 +40,6 @@ function App() {
     if (copied) {
       passwordRef.current?.select()
       console.log("This is password refrence : ", passwordRef)
-      toast.success("Password copied")
     }
   }
 
